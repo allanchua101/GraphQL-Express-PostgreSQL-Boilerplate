@@ -4,6 +4,7 @@ const userListQueryResolver = require('../graphql-resolvers/user-list-gresolver.
 const typeDefs = `
     type Query {
         users: [User]
+        hi: String
     }
 
     type User {
@@ -14,8 +15,8 @@ const typeDefs = `
 `;
 
 const userListQuerySchema = makeExecutableSchema({ 
-    typeDefs, 
-    userListQueryResolver 
+    typeDefs: typeDefs, 
+    resolvers : userListQueryResolver
 });
 
 module.exports = userListQuerySchema;

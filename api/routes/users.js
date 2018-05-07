@@ -5,7 +5,7 @@ const userListQuerySchema = require('../graphql-schemas/user-list-gschema.js');
 
 const router = express.Router();
 
-router.post('/list', bodyParser.json(), graphqlExpress({
+router.post('/list', graphqlExpress({
   schema: userListQuerySchema
 }));
 
