@@ -1,9 +1,14 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
+const bodyParser = require('body-parser');
+const userListQuerySchema = require('../graphql-schemas/user-list-gschema.js');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+const router = express.Router();
+
+router.post('/list', bodyParser.json(), graphqlExpress({
+  schema: userListQuerySchema
+}));
+
+router.get('/graphiql', graphiqlExpress({ endpointURL: '/users/list' }));
 
 module.exports = router;
