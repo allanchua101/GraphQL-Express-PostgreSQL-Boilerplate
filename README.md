@@ -38,6 +38,4 @@ GraphQL  is a data query language developed internally by Facebook in 2012 befor
 
 If any guy out there experienced some problem with the setup mentioned above. Please feel free to contact me or push some changes and I will gladly help and accept changes you provide.
 
-Cheers,
-
-Allan
+Cheers!!!!
