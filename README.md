@@ -25,14 +25,13 @@ GraphQL  is a data query language developed internally by Facebook in 2012 befor
    
    `npm install`
 
-4. Install Apollo for Express (GraphQL utilization framework for Express)
-
-   `npm install apollo-server-express --save`
-
-5. Install GraphQL and GraphQL Tools
+4. Install GraphQL and GraphQL Tools
 
    `npm install graphql graphql-tools --save`
-  
+
+5. Install Apollo for Express (GraphQL utilization framework for Express)
+
+   `npm install apollo-server-express --save`
   
 ### NOTES
 
